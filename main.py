@@ -28,13 +28,14 @@ match cliente_detalle.tipo.lower():
         #max extraccion 100 000 por dia
         pass
 
-try:
-    if cliente_detalle.estado.lower() == "aceptada":
-        pass #hay que poner que directamente lo imprima
-    else:   #es rechazada --> hay que poner porque
-        assert ()
-except:
-    pass
-    # assert nombre:
-    #     lo que tiene que 
+if __name__ == "_main_":
+    try:
+        if cliente_detalle.estado.lower() == "aceptada":
+            pass #hay que poner que directamente lo imprima
+        else:   #es rechazada --> hay que poner porque
+            assert ()
+    except:
+        pass
+        # assert nombre:
+        #     lo que tiene que 
     
