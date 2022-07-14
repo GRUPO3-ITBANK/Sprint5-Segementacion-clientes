@@ -2,12 +2,12 @@ import string
 
 
 class Cliente:
-    def __init__(self, cliente,direccion):
+    def __init__(self, cliente):
         self.nombre=cliente.nombre
         self.apellido=cliente.apellido
         self.numero=cliente.numero
-        self.DNI=cliente.DNI 
-        self.direccion=direccion
+        self.dni=cliente.dni
+        self.direccion=cliente.direccion
     
     def puede_crear_chequera(self): 
         pass

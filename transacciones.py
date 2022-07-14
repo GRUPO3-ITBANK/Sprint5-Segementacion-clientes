@@ -1,24 +1,3 @@
-import json
-
-class transacciones_clientes:
-    def __init__(self):
-        pass
-
-    def load_from_json(self, fileName):
-        with open(fileName, 'r') as f:
-            data = json.loads(f.read())
-
-        self.numero = data['numero']
-        self.nombre = data['nombre']
-        self.apellido = data['apellido']
-        self.DNI=data['DNI']
-        self.tipo=data['tipo']
-        self.transacciones = []
-        for x in data["transacciones"]:
-            transaccion= transacciones_detalle(x)
-            self.transacciones.append(transaccion)
-       
-
 class transacciones_detalle:
     def __init__(self, data):
         self.estado=data['estado']

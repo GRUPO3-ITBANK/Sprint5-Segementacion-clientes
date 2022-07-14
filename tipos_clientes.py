@@ -11,20 +11,28 @@ class Classic(Cliente):
 
     def cuenta_ahorro_pesos(self,monto):
         caja_ahorro_pesos = Cuenta(10000,150000,monto,monto*0.01,0)
-       
+        return caja_ahorro_pesos
 
 class Gold(Cliente):
     def puede_crear_chequera(self):
         return True
-    #1 chequera
+        #1 chequera
     def puede_crear_tarjeta_credito(self):
         return True
-    # solo 1 tarjeta de credito
+        # solo 1 tarjeta de credito
     def puede_comprar_dolar(self):
         return True
-    Caja_ahorro_pesos = Cuenta(20000,500000,21321,0.005,0)
-    Caja_ahorro_dolar = Cuenta(2000,300,20,10,5) 
-    Cuenta_corriente = Cuenta(20000,500000,123123,0.005,10000)
+
+    def cuenta_ahorro_pesos(self,monto):
+        caja_ahorro_pesos = Cuenta(20000,500000,monto,monto*0.005,0)
+        return caja_ahorro_pesos
+    def cuenta_ahorro_dolares(self,monto):
+        caja_ahorro_dolar = Cuenta(2000,300,monto,monto*0.005,5) 
+        return caja_ahorro_dolar
+    def cuenta_corriente(self,monto):
+        cuenta_corriente = Cuenta(20000,500000,monto,monto*0.005,10000)
+        return cuenta_corriente
+    
     #saldo hasta de menos -10000
 
 class Black(Cliente):
@@ -33,10 +41,21 @@ class Black(Cliente):
     #dos chequeras
     def puede_crear_tarjeta_credito(self):
         return True
-        #5 tarjetas de credito
+    #5 tarjetas de credito
     def puede_comprar_dolar(self):
         return True 
     
-    Caja_ahorro_pesos = Cuenta(100000,500000,21312321,0.005,10000)
-    Caja_ahorro_dolar = Cuenta(2000,300,20,10,5) 
-    Cuenta_corriente = Cuenta(21312,4325,34.21,4,10000)
+    
+    def cuenta_ahorro_pesos(self,monto):
+        caja_ahorro_pesos = Cuenta(100000,500000,monto,0,10000)
+        return caja_ahorro_pesos
+    def cuenta_ahorro_dolares(self,monto):
+        caja_ahorro_dolar = Cuenta(2000,300,monto,0,5)  
+        return caja_ahorro_dolar
+    def cuenta_corriente(self,monto):
+        cuenta_corriente = Cuenta(21312,4325,monto,0,10000)
+        return cuenta_corriente
+    
+    
+    
+    
