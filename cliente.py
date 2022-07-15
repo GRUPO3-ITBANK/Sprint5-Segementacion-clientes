@@ -9,6 +9,7 @@ class Cliente:
         self.dni=cliente.dni
         self.direccion=cliente.direccion
     
+    #eventos abstractos
     def puede_crear_chequera(self): 
         pass
     def puede_crear_tarjeta_credito(self):
@@ -17,5 +18,5 @@ class Cliente:
         pass
 
     def __str__(self):
-        return f"{self.nombre}, {self.apellido}, {self.direccion}"
+        return f"{self.nombre}, {self.apellido}, {self.numero}, {self.dni}, {self.direccion}"
 

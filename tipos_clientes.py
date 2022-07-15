@@ -27,7 +27,7 @@ class Gold(Cliente):
         caja_ahorro_pesos = Cuenta(20000,500000,monto,monto*0.005,0)
         return caja_ahorro_pesos
     def cuenta_ahorro_dolares(self,monto):
-        caja_ahorro_dolar = Cuenta(2000,300,monto,monto*0.005,5) 
+        caja_ahorro_dolar = Cuenta(2000,300,monto,monto*0.005,0) 
         return caja_ahorro_dolar
     def cuenta_corriente(self,monto):
         cuenta_corriente = Cuenta(20000,500000,monto,monto*0.005,10000)
@@ -47,13 +47,13 @@ class Black(Cliente):
     
     
     def cuenta_ahorro_pesos(self,monto):
-        caja_ahorro_pesos = Cuenta(100000,500000,monto,0,10000)
+        caja_ahorro_pesos = Cuenta(100000,None,500000,monto,0,0)
         return caja_ahorro_pesos
     def cuenta_ahorro_dolares(self,monto):
-        caja_ahorro_dolar = Cuenta(2000,300,monto,0,5)  
+        caja_ahorro_dolar = Cuenta(2000,None,monto,0,0)  
         return caja_ahorro_dolar
     def cuenta_corriente(self,monto):
-        cuenta_corriente = Cuenta(21312,4325,monto,0,10000)
+        cuenta_corriente = Cuenta(100000,None,monto,0,10000)
         return cuenta_corriente
     
     

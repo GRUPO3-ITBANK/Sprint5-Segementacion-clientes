@@ -14,8 +14,7 @@ class movimientos_clientes:
         self.apellido = data['apellido']
         self.dni=data['dni']
         self.tipo=data['tipo']
-        direc = direccion(data["direccion"])
-        self.direccion = direc
+        self.direccion = direccion(data["direccion"])
         self.transacciones = []
         for x in data["transacciones"]:
             transaccion= transacciones_detalle(x)
