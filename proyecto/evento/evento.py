@@ -1,6 +1,8 @@
-import json
-from transacciones import TransaccionesDetalle
+import sys
+sys.path.append(r'.\proyecto')
+from evento.transacciones import TransaccionesDetalle
 from cliente.direccion import direccion
+import json
 
 class Evento:
     def __init__(self):

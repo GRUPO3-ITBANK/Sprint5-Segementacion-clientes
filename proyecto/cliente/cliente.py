@@ -7,8 +7,7 @@ class Cliente:
         self.numero=cliente.numero
         self.dni=cliente.dni
         self.direccion=cliente.direccion
-        
-    
+
     #eventos abstractos
     def puede_crear_chequera(self): 
         pass

@@ -1,3 +1,5 @@
+import sys
+sys.path.append(r'.\proyecto')
 from abc import abstractmethod
 from evento.evento import Evento
 from evento.transacciones import TransaccionesDetalle

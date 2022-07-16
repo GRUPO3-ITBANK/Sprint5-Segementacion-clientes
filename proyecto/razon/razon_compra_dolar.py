@@ -1,7 +1,4 @@
 from razon import Razon
-from evento import Evento
-from cliente.tipos_clientes import Classic, Gold, Black
-
 
 class RazonCompraDolar(Razon):
     def resolver(self):

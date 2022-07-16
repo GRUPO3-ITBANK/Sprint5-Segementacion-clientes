@@ -1,5 +1,7 @@
-from cliente import Cliente
-from cuenta import Cuenta
+import sys
+sys.path.append(r'.\proyecto')
+from .cliente import Cliente
+from .cuenta import Cuenta
 
 class Classic(Cliente):
     def puede_crear_chequera(self):
