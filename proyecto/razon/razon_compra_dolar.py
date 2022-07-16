@@ -1,6 +1,6 @@
 from razon import Razon
 from evento import Evento
-from tipos_clientes import Classic, Gold, Black
+from cliente.tipos_clientes import Classic, Gold, Black
 
 
 class RazonCompraDolar(Razon):
