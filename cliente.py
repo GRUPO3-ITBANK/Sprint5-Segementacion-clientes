@@ -1,6 +1,5 @@
 import string
 
-
 class Cliente:
     def __init__(self, cliente):
         self.nombre=cliente.nombre

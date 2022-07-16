@@ -1,7 +1,7 @@
 import json
-from transacciones import transacciones_detalle
+from transacciones import TransaccionesDetalle
 from direccion import direccion
-class movimientos_clientes:
+class Evento:
     def __init__(self):
         pass
 
@@ -17,7 +17,7 @@ class movimientos_clientes:
         self.direccion = direccion(data["direccion"])
         self.transacciones = []
         for x in data["transacciones"]:
-            transaccion= transacciones_detalle(x)
+            transaccion= TransaccionesDetalle(x)
             self.transacciones.append(transaccion)
         
         

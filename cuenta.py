@@ -5,6 +5,5 @@ class Cuenta:
         self.monto=monto
         self.costo_transferencias=costo_transferencias
         self.saldo_descubierto_disponible=saldo_descubierto_disponible
-
     def __str__(self):
         return f"{self.limite_extraccion_diario}, {self.limite_transferencia_recibida}, {self.monto}, {self.costo_transferencias}, {self.saldo_descubierto_disponible}"

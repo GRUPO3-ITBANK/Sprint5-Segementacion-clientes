@@ -1,4 +1,4 @@
-class transacciones_detalle:
+class TransaccionesDetalle:
     def __init__(self, data):
         self.estado=data['estado']
         self.tipo=data['tipo']
