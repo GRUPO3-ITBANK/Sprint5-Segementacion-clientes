@@ -1,8 +1,12 @@
-from .razon import Razon
+from razon import Razon
 from evento import Evento
 from tipos_clientes import Classic, Gold, Black
 
 
-class Razon_compra_dolar(Razon):
-    def resolver(self,transaccion,evento):
-        pass
+class RazonCompraDolar(Razon):
+    def resolver(self):
+        if not self.cliente.puede_comprar_dolar():
+            return 'No puede comprar dolares'
+        
+        if self.transaccion.monto > self.transaccion.saldoEnCuenta:
+            return 'Saldo insuficiente para compra de dolares'

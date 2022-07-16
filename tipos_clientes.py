@@ -25,9 +25,12 @@ class Classic(Cliente):
         return caja_ahorro_pesos
 
 class Gold(Cliente):
-    def __init__(self):        
-        self.cant_chequeras_disp=1
-        self.cant_tarjetas_credito_disp=1
+
+    def cuantas_chequeras_puede(self):    
+        return 1
+
+    def cuantas_tarjetas_cr_puede(self):
+     return 1
         
     def puede_crear_chequera(self):
         return True
@@ -53,9 +56,12 @@ class Gold(Cliente):
     #saldo hasta de menos -10000
 
 class Black(Cliente):
-    def __init__(self):        
-        self.cant_chequeras_disp=2
-        self.cant_tarjetas_credito_disp=5
+    
+    def cuantas_chequeras_puede(self):    
+        return 2
+
+    def cuantas_tarjetas_cr_puede(self):
+        return 5
 
     def puede_crear_chequera(self):
         return True
