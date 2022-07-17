@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r'.\proyecto')
+sys.path.append(r'./proyecto')
 from evento.evento import Evento
 from evento.transacciones import TransaccionesDetalle
 from cliente.cliente import Cliente
@@ -31,7 +31,7 @@ def obtenerRazon(t,evento):
 
 def Procesar(archivoJSON):
     evento = Evento()
-    evento.load_from_json(f"proyecto/archivos_json/{archivoJSON}")
+    evento.load_from_json(f"./proyecto/archivos_json/{archivoJSON}")
     cliente = Cliente(evento)
     resultados=[]
     for t in evento.transacciones:
