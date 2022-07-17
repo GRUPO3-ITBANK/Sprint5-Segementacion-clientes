@@ -31,7 +31,7 @@ def obtenerRazon(t,evento):
 
 def Procesar(archivoJSON):
     evento = Evento()
-    evento.load_from_json(f"./proyecto/archivos_json/{archivoJSON}")
+    evento.load_from_json(f"archivos_json/{archivoJSON}")
     cliente = Cliente(evento)
     resultados=[]
     for t in evento.transacciones:
