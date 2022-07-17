@@ -37,6 +37,9 @@ def Procesar(archivoJSON):
     for t in evento.transacciones:
         resultado = t
         resultado.razon = ((obtenerRazon(t,evento)))
+        if resultado.razon == None:
+            resultado.estado = "ACEPTADA"
+            resultado.razon = ""
         resultados.append(resultado)
     
     CreadorHTML(cliente, resultados)
