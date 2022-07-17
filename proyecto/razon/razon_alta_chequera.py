@@ -1,4 +1,4 @@
-from razon import Razon
+from .razon import Razon
 
 class RazonAltaChequera(Razon):
     def resolver(self):

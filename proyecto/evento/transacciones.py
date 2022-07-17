@@ -10,6 +10,4 @@ class TransaccionesDetalle:
         self.saldoEnCuenta=data['saldoEnCuenta']
         self.totalTarjetasDeCreditoActualmente=data['totalTarjetasDeCreditoActualmente']
         self.totalChequerasActualmente=data['totalChequerasActualmente']
-
-    # def __str__(self):
-    #     return f"estado: {self.estado}, tipo: {self.tipo}"
+        # self.razon = None

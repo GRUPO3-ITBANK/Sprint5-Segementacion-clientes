@@ -1,4 +1,4 @@
-from razon import Razon
+from .razon import Razon
 
 class RazonAltaTarjetaCredito(Razon):
     def resolver(self):

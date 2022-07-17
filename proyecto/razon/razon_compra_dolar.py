@@ -1,4 +1,4 @@
-from razon import Razon
+from .razon import Razon
 
 class RazonCompraDolar(Razon):
     def resolver(self):

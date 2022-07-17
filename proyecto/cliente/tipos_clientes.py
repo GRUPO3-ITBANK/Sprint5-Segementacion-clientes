@@ -85,8 +85,9 @@ class Black(Cliente):
         return True
     
     def cuenta_ahorro_pesos(self,monto):
-        caja_ahorro_pesos = Cuenta(100000,None,500000,monto,0,0)
+        caja_ahorro_pesos = Cuenta(100000,None,monto,0,0)
         return caja_ahorro_pesos
+
     def cuenta_ahorro_dolares(self,monto):
         caja_ahorro_dolar = Cuenta(2000,None,monto,0,0)  
         return caja_ahorro_dolar
