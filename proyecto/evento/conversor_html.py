@@ -10,16 +10,17 @@ def CreadorHTML(cliente,resultados):
         <link href="./estilo/main.css" rel="stylesheet">
       </head>
         <body class="bg">
-        <section class="encabezado">
-            <h1 class="text-center"><b>Nombre y apellido:</b> {cliente.nombre}, {cliente.apellido}</h1>
-            <div class="ml-2 mt-3"><b>ID de cliente:</b> {cliente.numero}</div>
-            <div class="ml-2"><b>DNI:</b> {cliente.dni}</div>
-            <div class="ml-2"><b>Dirección:</b> {cliente.direccion}</div>
-        </section>
-            <table class="mt-4 mov">"""
+            <header class="col-auto bg-dark text-light">
+            <h1 class="text-center"><b>Lista de transacciones</b></h1>
+            <div><b>Nombre y apellido:</b> {cliente.nombre}, {cliente.apellido}</div>
+            <div><b>ID de cliente:</b> {cliente.numero}</div>
+            <div><b>DNI:</b> {cliente.dni}</div>
+            <div><b>Dirección:</b> {cliente.direccion}</div>
+        </header>
+            <table class="mt-4 m-sm-auto">"""
     for r in resultados:
             html += f"""
-              <tr class="card">
+              <tr class="card p-2 m-3 rounded shadow">
                 <td><b>Tipo:</b> {r.tipo}</td>
                 <td><b>Estado:</b> {r.estado}</td>
                 <td><b>Monto:</b> ${r.monto}</td>"""
